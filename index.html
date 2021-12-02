@@ -3,96 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <style></style>
-    <title>Homework1</title>
-    <link rel="stylesheet" href="style.css">
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header-wrap">
         <div class="container">
-            <nav>
-                <a href="/"><span>Web</span>Studio</a>
-                <ul>
-                    <li><a href="#">Студия</a></li>
-                    <li><a href="#">Портфолио</a></li>
-                    <li> <a href="#">Контакты</a></li>
+            <div class="header flex">
+                <nav class="header-nav flex">
+                    <a href="#" class="logo"><span>Web</span>Studio</a>
+                    <ul class="header-pages">
+                        <li class="header-pages-active"><a href="#">Студия</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li> <a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="header-contact">
+                    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <ul>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+            </div>
         </div>
     </header>
     <main>
-        <section>
-            <h1 class="head-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="head-button" type="button">Заказать услугу</button>
-        </section>
-        <section>
+        <section class="section head">
             <div class="container">
-                <ul class="features">
-                    <li>
+                <h1 class="head-title">Эффективные решения <br>для вашего бизнеса</h1>
+                <button class="head-button" type="button">Заказать услугу</button>
+            </div>
+        </section>
+        <section class="features section">
+            <div class="container">
+                <ul class="flex">
+                    <li class="features-item">
                         <h3>Внимание к деталям</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li>
+                    <li class="features-item">
                         <h3>Пунктуальность</h3>
                         <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li>
+                    <li class="features-item">
                         <h3>Планирование</h3>
                         <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li>
+                    <li class="features-item">
                         <h3>Современные технологии</h3>
                         <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section>
+        <section class="section">
             <div class="container">
-                <h2>Чем мы занимаемся</h2>
-                <ul class="todo-gallery">
-                    <li><img width="370" src="images/img.jpg" alt="computer"></li>
-                    <li><img width="370" src="images/img1.jpg" alt="phone"></li>
-                    <li><img width="370" src="images/img2.jpg" alt="tablet"></li>
+                <h2 class="section-title">Чем мы занимаемся</h2>
+                <ul class="todo-gallery flex">
+                    <li><img src="images/img.jpg" alt="computer"></li>
+                    <li><img src="images/img1.jpg" alt="phone"></li>
+                    <li><img src="images/img2.jpg" alt="tablet"></li>
                 </ul>
             </div>
         </section>
-        <section class="team">
+        <section class="team section">
             <div class="container">
-                <h2>Наша команда</h2>
-                <ul class="team-block">
-                    <li>
-                        <img width="270" src="images/img3.jpg" alt="Designer">
-                        <h3>Игорь Демьяненко</h3>
-                        <p>Product Designer</p>
+                <h2 class="section-title">Наша команда</h2>
+                <ul class="team-block flex">
+                    <li class="team-card">
+                        <img class="team-img" src="images/img3.jpg" alt="Designer">
+                        <div class="team-text">
+                            <h3>Игорь Демьяненко</h3>
+                            <p>Product Designer</p>
+                        </div>
                     </li>
-                    <li>
-                        <img width="270" src="images/img4.jpg" alt="Frontend">
-                        <h3>Ольга Репина</h3>
-                        <p>Frontend Developer</p>
+                    <li class="team-card">
+                        <img class="team-img" src="images/img4.jpg" alt="Frontend">
+                        <div class="team-text">
+                            <h3>Ольга Репина</h3>
+                            <p>Frontend Developer</p>
+                        </div>
                     </li>
-                    <li>
-                        <img width="270" src="images/img5.jpg" alt="Marketing">
-                        <h3>Николай Тарасов</h3>
-                        <p>Marketing</p>
+                    <li class="team-card">
+                        <img class="team-img" src="images/img5.jpg" alt="Marketing">
+                        <div class="team-text">
+                            <h3>Николай Тарасов</h3>
+                            <p>Marketing</p>
+                        </div>
                     </li>
-                    <li>
-                        <img width="270" src="images/img6.jpg" alt="Designer">
-                        <h3>Михаил Ермаков</h3>
-                        <p>UI Designer</p>
+                    <li class="team-card">
+                        <img class="team-img" src="images/img6.jpg" alt="Designer">
+                        <div class="team-text">
+                            <h3>Михаил Ермаков</h3>
+                            <p>UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <a href="/"><span>Web</span>Studio</a>
+            <a href="#" class="footer-logo logo"><span>Web</span>Studio</a>
             <address>
-                <ul>
+                <ul class="footer-contact">
                     <li><a href="https://goo.gl/maps/wKkNSf3HqvnLf78X8" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
                     <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
